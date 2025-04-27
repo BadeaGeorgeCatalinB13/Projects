@@ -1,0 +1,12 @@
+<!-- admin.html -->
+<table>
+    <!-- ... other table headers ... -->
+    <tbody>
+        <tr th:each="user : ${users2}">  <!-- Changed from ${users} -->
+            <td th:text="${user.id}"></td>
+            <td th:text="${user.username}"></td>
+            <td th:text="${user.password}"></td>
+            <td th:text="${user.role}"></td>
+        </tr>
+    </tbody>
+</table>
